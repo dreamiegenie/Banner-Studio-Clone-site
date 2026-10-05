@@ -1,5 +1,6 @@
 
-import { StarsIcon } from "./StarsIcon"
+import { StarsIcon } from "./StarsIcon";
+import { Circle } from "./Circle";
 
 export function HomePage(){
 
@@ -13,22 +14,24 @@ export function HomePage(){
                 <button className="border border-gray-500/50 rounded-4xl text-xs px-3 p-2 text-gray-300/80">Get the app</button>
             </nav>
             <div className="border border-gray-500/30"></div>
-            <section className="mt-10 px-4">
-                <button className="border border-red-500/30 rounded-4xl text-xs px-3.5 p-2 text-rose-200 flex gap-3">
+        <main className="md:grid md:grid-cols-2 md:place-items-center md:mt-20  md:mx-24 gap-40">
+            <div className="">
+            <section className="mt-12 px-4">
+                <button className="border border-red-500/20 rounded-4xl text-xs px-3.5 p-2 text-rose-200 flex gap-3 font-bold bg-red-950/30">
                         <StarsIcon/>IMAGE & GIF PROFILE BANNERS</button>
                 <div className="mt-6">
-                    <p className="font-bold text-5xl">Your Profile.</p>
-                    <p className="font-bold text-5xl">A whole new</p>
-                    <span className="bg-linear-60 from-red-400 via-rose-500/80 to-slate-300 bg-clip-text text-transparent font-bold text-5xl">Kind of you.</span>
+                    <p className="font-bold text-5xl sm:text-[70px]">Your Profile.</p>
+                    <p className="font-bold text-5xl sm:text-[70px]">A whole new</p>
+                    <span className="bg-linear-60 from-red-400 via-rose-500/80 to-slate-300 bg-clip-text text-transparent font-bold text-5xl sm:text-[70px]">Kind of you.</span>
                 </div>
             </section>
             <section className="p-4 mt-6 text-slate-300/50 text-lg">
                 <p>Add an image or GIF banner to your TikTok profile. Complete the task, then follow the tutorial to get the feature</p>
             
                 <div className="mt-6 text-white flex flex-col gap-4 sm:flex-row">
-                    <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:max-w-sm sm:hover:-translate-y-0.5 transition-all duration-200">
+                    <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200">
                                 <StarsIcon/> Get your banner</button>
-                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full sm:max-w-sm sm:hover:bg-white sm:hover:text-black transition-colors duration-500 ">
+                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black transition-colors duration-500 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
                                     <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                     </svg>See how it works</button>
@@ -43,11 +46,12 @@ export function HomePage(){
                         <span>Image + GIF support</span>
                     </div>
             </section>
+            </div>
             <section className="mt-10 "> 
-                <div className="border rounded-2xl  m-4 border-gray-400/30 ">
+                <div className="border rounded-2xl bg-mist-800/50 m-4 border-gray-400/30 sm:w-md md:w-lg sm:m-auto md:rotate-2">
                     <div className="flex justify-between items-center text-xs text-gray-400 mx-4 mt-4"> 
                         <span className="">YOUR PROFILE, REIMAGINED</span>
-                        <span className="bg-white/20 px-2 p-1 rounded-md font-light">CONCEPT</span>
+                        <span className="bg-white/20 px-2 p-1 rounded-md font-light text-[10px] text-white/80">CONCEPT</span>
                     </div>
                     <div className="border rounded-2xl mt-6 mx-3 mb-6 border-gray-500/80 bg-linear-150 from-rose-700 via-teal-950  to-green-500/50 ">
                             <div className="flex flex-col text-right mx-4 m-4 ">
@@ -83,16 +87,24 @@ export function HomePage(){
                                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434m6.559 5.448a.5.5 0 0 1 .548.736A4.5 4.5 0 0 1 7.965 13a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242s1.46-.118 2.152-.242a27 27 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zm-.07-5.448c1.397-.864 3.543 1.838-.953 3.434-3.067-3.554.19-4.858.952-3.434z"/>
                                     </svg>Your moments</p>
 
-                                <div className="flex justify-center gap-2 mt-4 mb-6">
-                                    <div className="bg-linear-to-br from-gray-500 to-gray-950/70 font-bold rounded-lg w-24 h-20  flex justify-center items-center">CREATE.</div>
-                                    <div  className="bg-linear-to-br from-green-500/80 to-green-950 font-bold rounded-lg w-24 h-20 text-emerald-300 flex justify-center items-center">YOUR.</div>
-                                    <div  className="bg-linear-to-br from-rose-500/60 to-rose-950/80 text-rose-300 font-bold rounded-lg w-24 h-20 flex justify-center items-center">WORLD.</div>
+                                <div className="flex justify-center gap-2 mt-4 mb-6 ">
+                                    <div className="bg-linear-to-br from-gray-500 to-gray-950/70 font-bold rounded-lg w-24 h-24 sm:w-30 md:w-36 flex justify-center items-center">CREATE.</div>
+                                    <div  className="bg-linear-to-br from-green-500/80 to-green-950 font-bold rounded-lg w-24 h-24 sm:w-30 md:w-36 text-emerald-300 flex justify-center items-center">YOUR.</div>
+                                    <div  className="bg-linear-to-br from-rose-500/60 to-rose-950/80 text-rose-300 font-bold rounded-lg sm:w-30 md:w-36 w-24 h-24 flex justify-center items-center">WORLD.</div>
                                 </div>
                             </div>
+                            </div>
+                            <div className="m-4 flex justify-between">
+                                <span className="text-[10px]">Illustrative profile, not an app screenshot</span>
+                                <div className="flex gap-2">
+                                        <Circle className="text-red-500"/>
+                                        <Circle className="text-green-500"/>
+                                        <Circle className="text-gray-400"/>
+                                </div>
                     </div>
                 </div>
             </section>
-            
+        </main>
 
         </>
     )
