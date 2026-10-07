@@ -1,6 +1,7 @@
 
 import { StarsIcon } from "./StarsIcon";
 import { Circle } from "./Circle";
+import { VirusTotal } from "./VirusTotal";
 import { Cards } from "./Cards";
 import dreamiegenie from './assets/dreamiegenie.png'
 
@@ -24,7 +25,7 @@ export function HomePage(){
         {/* main section span across the smth abeg */}
         <main className="grid lg:items-center  lg:grid-cols-2  lg:mx-24 gap-6">
             <div className="px-4 md:px-10">
-            <section className="mt-10">
+            <section className="mt-10 sm:mt-15">
                 <button className="border border-red-500/20 rounded-4xl text-xs px-3.5 p-2 text-rose-200 flex gap-3 font-bold bg-red-950/30">
                         <StarsIcon/>IMAGE & GIF PROFILE BANNERS</button>
                 <div className="mt-6">
@@ -39,8 +40,8 @@ export function HomePage(){
                 <div className="mt-10 text-white flex flex-col gap-4 sm:flex-row">
                     <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200">
                                 <StarsIcon/> Get your banner</button>
-                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black transition-colors duration-500 ease-in-out">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-play-btn-fill" viewBox="0 0 16 16">
                                     <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                     </svg>See how it works</button>
                 </div>
@@ -101,7 +102,7 @@ export function HomePage(){
                             <div className="border-[0.8px] mt-4 mx-4 border-white/30"></div>
                             <div>
                                 <p className="text-xs mt-2 mx-6 flex gap-2 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-emoji-heart-eyes-fill" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-emoji-heart-eyes-fill" viewBox="0 0 16 16">
                                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434m6.559 5.448a.5.5 0 0 1 .548.736A4.5 4.5 0 0 1 7.965 13a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242s1.46-.118 2.152-.242a27 27 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zm-.07-5.448c1.397-.864 3.543 1.838-.953 3.434-3.067-3.554.19-4.858.952-3.434z"/>
                                     </svg>Your moments</p>
 
@@ -131,7 +132,8 @@ export function HomePage(){
                     <h2 className="font-extrabold mt-2 text-3xl md:text-4xl">Three steps. One new look.</h2>
                     <span className="text-[14px] block mt-4 text-white/50">Choose your device, open the locker, then follow the tutorial on BannerTik.</span>
                 </div>
-        <div className="grid gap-8 grid-rows-3 lg:grid-cols-3  mt-12">
+                
+        <div className="grid gap-8 lg:grid-cols-3  mt-12">
                 <Cards >
                     
                         <div className="flex justify-between items-center mx-6 mt-6">
@@ -144,7 +146,7 @@ export function HomePage(){
                         </div>
                     <div className="m-6">
                         <h2 className="font-bold text-xl">Pick your device</h2>
-                        <span className="text-white/60 text-[14px]">Select iPhone or Android. Each has its own app file and installation instructions</span>
+                        <span className="text-white/60 text-[15px] inline-block mt-3">Select iPhone or Android. Each has its own app file and installation instructions</span>
                     </div>
                 </Cards>
     
@@ -161,7 +163,7 @@ export function HomePage(){
                         </div>
                     <div className="m-6">
                         <h2 className="font-bold text-xl">Finish the task</h2>
-                        <span className="text-white/60 text-[14px]">Open the locker and follow the app offer instructions. The waiting period starts when you open it.</span>
+                        <span className="text-white/60 text-[15px] inline-block mt-3">Open the locker and follow the app offer instructions. The waiting period starts when you open it.</span>
                     </div>
                 </Cards>
 
@@ -177,15 +179,14 @@ export function HomePage(){
                         </div>
                     <div className="m-6">
                         <h2 className="font-bold text-xl">Follow the tutorial</h2>
-                        <span className="text-white/60 text-[14px] mt-20">After the countdown, you will go to BannerTik for the app files and image or GIF banner tutorial.</span>
+                        <span className="text-white/60 text-[15px] inline-block mt-3">After the countdown, you will go to BannerTik for the app files and image or GIF banner tutorial.</span>
                     </div>
                 </Cards>
         </div>
-            </section>
-            <section>'
-                
-            </section>
 
+            <VirusTotal/>
+            </section>
+        
         </>
     )
 }
