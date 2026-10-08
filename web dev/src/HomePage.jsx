@@ -20,7 +20,7 @@ export function HomePage(){
                 <div className="flex justify-center items-center gap-6 ">
                     <a href="#" className="hidden lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">How it works</a>
                     <a href="#" className="hidden  lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">Questions</a>
-                    <button className="border border-gray-500/50 rounded-4xl text-xs px-3 p-2 text-gray-300/80 hover:bg-white font-bold hover:text-black transition-all duration-300">Get the app</button>
+                    <a className="border border-gray-500/50 rounded-4xl text-xs px-3 p-2 text-gray-300/80 hover:bg-white font-bold hover:text-black transition-all duration-300" href="https://github.com/dreamiegenie" target="_blank"   rel="noopener noreferrer">My Github</a>
                 </div>
             </nav>
             
@@ -67,7 +67,7 @@ export function HomePage(){
                     <div className="border  rounded-2xl mt-6 mx-4 mb-6  border-gray-500/50 bg-[#090909ae]">
                     {/* <div className=""> */}
 
-                        <div className="bg-[linear-gradient(120deg,#fe2c55,#252525_44%,#304b3a_75%,#36df87)] banner-color transition-colors ease-in-out pt-0.5 rounded-t-2xl">
+                        <div className="bg-[linear-gradient(120deg,#fe2c55,#252525_44%,#304b3a_75%,#36df87)] banner-color pt-0.5 rounded-t-2xl">
                             <div className="flex flex-col text-right mx-4 m-4 ">
                                 <span className="text-xs ">YOUR SPACE.  YOUR STYLE.</span>
                                 <div className="flex flex-col mt-4 font-bold text-4xl">
