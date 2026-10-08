@@ -40,9 +40,9 @@ export function HomePage(){
                 <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
                 <div className="mt-10 text-white flex flex-col gap-4 sm:flex-row">
-                    <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200">
+                    <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                                 <StarsIcon/> Get your banner</button>
-                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out">
+                    <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-play-btn-fill" viewBox="0 0 16 16">
                                     <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                     </svg>See how it works</button>
@@ -133,7 +133,7 @@ export function HomePage(){
                 <div className="mx-2">
                     <span className="font-bold text-[#fe2c55]  text-xs">THE SETUP</span>
                     <h2 className="font-extrabold mt-2 text-3xl md:text-4xl">Three steps. One new look.</h2>
-                    <span className="text-[14px] block mt-4 text-white/50">Choose your device, open the locker, then follow the tutorial on BannerTik.</span>
+                    <span className="text-[14px] block mt-4 text-white/50">Choose your device, open the locker, then follow the tutorial.</span>
                 </div>
                 
         <div className="grid gap-8 lg:grid-cols-3  mt-12">
@@ -182,7 +182,7 @@ export function HomePage(){
                         </div>
                     <div className="m-6">
                         <h2 className="font-bold text-xl">Follow the tutorial</h2>
-                        <span className="text-white/60 text-[15px] inline-block mt-3">After the countdown, you will go to BannerTik for the app files and image or GIF banner tutorial.</span>
+                        <span className="text-white/60 text-[15px] inline-block mt-3">After the countdown, you will go to dreamie.com for the app files and image or GIF banner tutorial.</span>
                     </div>
                 </Cards>
         </div>
