@@ -183,10 +183,8 @@ export function HomePage(){
                     </div>
                 </Cards>
         </div>
-
-            <VirusTotal/>
             </section>
-        
+            <VirusTotal/>
         </>
     )
 }
