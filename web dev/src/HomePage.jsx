@@ -39,7 +39,7 @@ export function HomePage(){
             <section className="mt-6 text-slate-300/60 text-lg">
                 <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
-                <div className="mt-10 text-white flex flex-col  items-center mr-2 gap-4 sm:flex-row">
+                <div className="mt-10 text-white flex flex-col  gap-4 sm:flex-row">
                     <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                                 <StarsIcon/> Get your banner</button>
                     <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out cursor-pointer">
@@ -59,8 +59,8 @@ export function HomePage(){
                     </div>
             </section>
             </div>
-            <section className="mt-6 mx-4 lg:mt-20"> 
-                <div className="border rounded-3xl bg-[rgb(20,20,20)]  border-gray-400/20  w-full sm:w-md sm:m-auto lg:w-lg lg:rotate-2 ">
+            <section className="mt-6 mx-4  lg:mt-20"> 
+                <div className="border rounded-3xl bg-[rgb(20,20,20)]  border-gray-400/20  w-full -mr-4 sm:w-md sm:m-auto lg:w-lg lg:rotate-2 ">
                     <div className="flex justify-between items-center text-xs text-gray-400 mx-4 mt-4 lg:mt-6"> 
                         <span className="">YOUR PROFILE, REIMAGINED</span>
                         <span className="bg-white/20 px-2 p-1 rounded-md font-light text-[10px] text-white/80">CONCEPT</span>
