@@ -5,6 +5,14 @@
   --gradientcolor: #120b0c;
 }
 
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
 
 body{
 background: radial-gradient(ellipse 740px 580px at 90% 7%,#29040c62,transparent),radial-gradient(ellipse 420px 460px at 2% 20%,#20202080,transparent),#090909;
