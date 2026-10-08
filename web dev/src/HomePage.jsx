@@ -39,7 +39,7 @@ export function HomePage(){
             <section className="mt-6 text-slate-300/60 text-lg">
                 <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
-                <div className="mt-10 text-white flex flex-col items-center gap-4 sm:flex-row">
+                <div className="mt-10 text-white flex flex-col  items-center mr-2 gap-4 sm:flex-row">
                     <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                                 <StarsIcon/> Get your banner</button>
                     <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out cursor-pointer">
