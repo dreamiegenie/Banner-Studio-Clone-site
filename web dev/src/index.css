@@ -14,3 +14,7 @@ background-repeat: no-repeat;
 }  
 
 
+.banner-color{
+  animation: banner-color 12s ease-in-out infinite;
+}
+

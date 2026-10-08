@@ -4,6 +4,8 @@ import { Circle } from "./Circle";
 import { VirusTotal } from "./VirusTotal";
 import { Cards } from "./Cards";
 import dreamiegenie from './assets/dreamiegenie.png'
+import { Footer } from "./Footer";
+import { FAQ } from "./FAQ";
 
 export function HomePage(){
 
@@ -13,17 +15,17 @@ export function HomePage(){
         <>
             {/* navigation section */}
         
-            <nav className="flex justify-between items-center p-4 mx-6">
+            <nav className="flex justify-between items-center p-4 mx-4 lg:mx-30 pb-4 border-b border-b-[#4e4f51]">
                 <h2 className="font-bold">Banner Studio</h2>
-                <div className="flex justify-center items-center gap-6">
+                <div className="flex justify-center items-center gap-6 ">
                     <a href="#" className="hidden lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">How it works</a>
                     <a href="#" className="hidden  lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">Questions</a>
                     <button className="border border-gray-500/50 rounded-4xl text-xs px-3 p-2 text-gray-300/80 hover:bg-white font-bold hover:text-black transition-all duration-300">Get the app</button>
                 </div>
             </nav>
-            <div className="border border-gray-500/30 "></div>
+            
         {/* main section span across the smth abeg */}
-        <main className="grid lg:items-center  lg:grid-cols-2  lg:mx-24 gap-6">
+        <main className="grid lg:items-center  lg:grid-cols-2  lg:mx-24 gap-6 ">
             <div className="px-4 md:px-10">
             <section className="mt-10 sm:mt-15">
                 <button className="border border-red-500/20 rounded-4xl text-xs px-3.5 p-2 text-rose-200 flex gap-3 font-bold bg-red-950/30">
@@ -35,7 +37,7 @@ export function HomePage(){
                 </div>
             </section>
             <section className="mt-6 text-slate-300/60 text-lg">
-                <p>Add an image or GIF banner to your TikTok profile. Complete the task, then follow the tutorial to get the feature.</p>
+                <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
                 <div className="mt-10 text-white flex flex-col gap-4 sm:flex-row">
                     <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200">
@@ -63,9 +65,9 @@ export function HomePage(){
                         <span className="bg-white/20 px-2 p-1 rounded-md font-light text-[10px] text-white/80">CONCEPT</span>
                     </div>
                     <div className="border  rounded-2xl mt-6 mx-4 mb-6  border-gray-500/50 bg-[#090909ae]">
-                    <div className="">
+                    {/* <div className=""> */}
 
-                        <div className="bg-[linear-gradient(120deg,#fe2c55,#252525_44%,#304b3a_75%,#36df87)] transition-colors ease-in-out pt-0.5 rounded-t-2xl">
+                        <div className="bg-[linear-gradient(120deg,#fe2c55,#252525_44%,#304b3a_75%,#36df87)] banner-color transition-colors ease-in-out pt-0.5 rounded-t-2xl">
                             <div className="flex flex-col text-right mx-4 m-4 ">
                                 <span className="text-xs ">YOUR SPACE.  YOUR STYLE.</span>
                                 <div className="flex flex-col mt-4 font-bold text-4xl">
@@ -78,7 +80,7 @@ export function HomePage(){
                                     </svg>GIF PREVIEW</button>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                         <div className="relative">
                             <div className="absolute -top-12 left-6 ">
                                 <span className="inline-block w-16 h-16  bg-black rounded-full"><img src={dreamiegenie} width={70} alt="dreamiege genio logo"/></span>
@@ -125,8 +127,9 @@ export function HomePage(){
             </section>
         </main> 
         {/* main styling ends above. this wrapper is to enable a different style on desktop */}
-            <div className="border-b-[0.8px] border-b-gray-400/50  md:w-200 m-auto mt-16 "></div>
-    <section className="mt-6 mx-4 lg:mx-30 md:mt-20 ">
+        <div className='border-b border-b-[#4e4f51b7] mx-6 mt-15 lg:mx-25'></div>
+
+    <section className="mt-10 mx-4 lg:mx-30 md:mt-20 pb-20 border-b border-b-[#4e4f51]">
                 <div className="mx-2">
                     <span className="font-bold text-[#fe2c55]  text-xs">THE SETUP</span>
                     <h2 className="font-extrabold mt-2 text-3xl md:text-4xl">Three steps. One new look.</h2>
@@ -134,7 +137,7 @@ export function HomePage(){
                 </div>
                 
         <div className="grid gap-8 lg:grid-cols-3  mt-12">
-                <Cards >
+                <Cards>
                     
                         <div className="flex justify-between items-center mx-6 mt-6">
                             <div className="bg-[#30171d] border-[#62313d] border rounded-xl p-2">
@@ -184,7 +187,10 @@ export function HomePage(){
                 </Cards>
         </div>
             </section>
+            {/* <div className="border mt-15"></div> */}
             <VirusTotal/>
+            <FAQ/>
+            <Footer/>
         </>
     )
 }
