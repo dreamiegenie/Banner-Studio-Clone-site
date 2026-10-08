@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>dreamiegenie logo</title>
+  <desc>Pastel kawaii dream genie logo with a crescent moon, sparkles and magic lamp.</desc>
+
+  <!-- Soft pastel badge -->
+  <circle cx="256" cy="256" r="244" fill="#FFF0F8"/>
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#E7B8E8" stroke-width="6"/>
+
+  <!-- Crescent moon -->
+  <path d="M365 83c-25 17-41 45-41 76 0 50 40 90 90 90 14 0 28-3 40-9-20 31-55 51-94 51-62 0-112-50-112-112 0-47 29-88 70-104 15-6 31-9 47-8z"
+        fill="#FFD66D"/>
+
+  <!-- Sparkles -->
+  <path d="M121 123l7 18 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#C99AE8"/>
+  <path d="M405 170l6 15 15 6-15 6-6 15-6-15-15-6 15-6z" fill="#F39BC7"/>
+  <path d="M104 291l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#FFD66D"/>
+  <path d="M409 320l7 17 17 7-17 7-7 17-7-17-17-7 17-7z" fill="#C99AE8"/>
+
+  <!-- Genie head -->
+  <path d="M177 238c0-70 35-108 79-108s79 38 79 108c0 54-34 91-79 91s-79-37-79-91z"
+        fill="#F7B7D9" stroke="#8D5AB8" stroke-width="8" stroke-linejoin="round"/>
+
+  <!-- Genie hair / top curl -->
+  <path d="M206 142c-9-39 17-70 50-70 30 0 52 22 52 49 0 26-17 44-39 49 10-13 11-28 5-38-13 17-36 25-68 10z"
+        fill="#D9A4E9" stroke="#8D5AB8" stroke-width="8" stroke-linejoin="round"/>
+
+  <!-- Hair shine -->
+  <path d="M217 170c10-18 22-27 34-31" fill="none" stroke="#FFE8F5" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Face -->
+  <path d="M211 237c9-13 23-13 32 0" fill="none" stroke="#6F3C96" stroke-width="7" stroke-linecap="round"/>
+  <path d="M269 237c9-13 23-13 32 0" fill="none" stroke="#6F3C96" stroke-width="7" stroke-linecap="round"/>
+  <path d="M250 252c4 5 8 5 12 0" fill="none" stroke="#6F3C96" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="215" cy="254" r="9" fill="#F18EBD"/>
+  <circle cx="297" cy="254" r="9" fill="#F18EBD"/>
+
+  <!-- Genie hands / heart pose -->
+  <path d="M195 274c-20 4-30 20-21 34 9 14 28 13 42-1l18-18-12-13z"
+        fill="#F7B7D9" stroke="#8D5AB8" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M317 274c20 4 30 20 21 34-9 14-28 13-42-1l-18-18 12-13z"
+        fill="#F7B7D9" stroke="#8D5AB8" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M256 299c-14-17-40-1-28 17l28 27 28-27c12-18-14-34-28-17z"
+        fill="#F39BC7"/>
+
+  <!-- Magic smoke -->
+  <path d="M256 335c-34 17-37 34-7 43 28 9 22 25-5 37-24 11-29 24-18 38"
+        fill="none" stroke="#C99AE8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M256 335c-34 17-37 34-7 43 28 9 22 25-5 37-24 11-29 24-18 38"
+        fill="none" stroke="#F5B5D8" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Lamp -->
+  <path d="M191 445c0-22 29-38 65-38s65 16 65 38c0 6-3 12-9 17H200c-6-5-9-11-9-17z"
+        fill="#FFD66D" stroke="#D89D35" stroke-width="7"/>
+  <path d="M184 458h144" stroke="#D89D35" stroke-width="8" stroke-linecap="round"/>
+  <path d="M224 475h64" stroke="#D89D35" stroke-width="8" stroke-linecap="round"/>
+  <path d="M314 423c24-5 35 5 42 17-17 1-31-2-42-10z"
+        fill="#FFD66D" stroke="#D89D35" stroke-width="7"/>
+  <path d="M217 418c-8-13-3-25 9-31" fill="none" stroke="#FFD66D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M244 438c7-8 18-8 25 0" fill="none" stroke="#F39BC7" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Tiny magic dots -->
+  <circle cx="151" cy="375" r="5" fill="#F39BC7"/>
+  <circle cx="373" cy="385" r="5" fill="#FFD66D"/>
+  <circle cx="130" cy="207" r="4" fill="#C99AE8"/>
+  <circle cx="390" cy="270" r="4" fill="#F39BC7"/>
+</svg>
