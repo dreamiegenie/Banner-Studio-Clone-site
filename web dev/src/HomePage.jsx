@@ -39,7 +39,7 @@ export function HomePage(){
             <section className="mt-6 text-slate-300/60 text-lg">
                 <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
-                <div className="mt-10 text-white flex flex-col gap-4 sm:flex-row">
+                <div className="mt-10 text-white flex flex-col items-center gap-4 sm:flex-row">
                     <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                                 <StarsIcon/> Get your banner</button>
                     <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out cursor-pointer">
@@ -47,6 +47,7 @@ export function HomePage(){
                                     <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                     </svg>See how it works</button>
                 </div>
+
                     <div className="flex gap-4 text-xs mt-6">
                         <span className="flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
@@ -59,13 +60,13 @@ export function HomePage(){
             </section>
             </div>
             <section className="mt-6 mx-4 lg:mt-20"> 
-                <div className="border rounded-3xl bg-[rgb(20,20,20)]  border-gray-400/20  sm:w-md sm:m-auto lg:w-lg lg:rotate-2 ">
+                <div className="border rounded-3xl bg-[rgb(20,20,20)]  border-gray-400/20  w-full sm:w-md sm:m-auto lg:w-lg lg:rotate-2 ">
                     <div className="flex justify-between items-center text-xs text-gray-400 mx-4 mt-4 lg:mt-6"> 
                         <span className="">YOUR PROFILE, REIMAGINED</span>
                         <span className="bg-white/20 px-2 p-1 rounded-md font-light text-[10px] text-white/80">CONCEPT</span>
                     </div>
                     <div className="border  rounded-2xl mt-6 mx-4 mb-6  border-gray-500/50 bg-[#090909ae]">
-                    {/* <div className=""> */}
+                    
 
                         <div className="bg-[linear-gradient(120deg,#fe2c55,#252525_44%,#304b3a_75%,#36df87)] banner-color pt-0.5 rounded-t-2xl">
                             <div className="flex flex-col text-right mx-4 m-4 ">
@@ -80,7 +81,7 @@ export function HomePage(){
                                     </svg>GIF PREVIEW</button>
                             </div>
                         </div>
-                    {/* </div> */}
+                    
                         <div className="relative">
                             <div className="absolute -top-12 left-6 ">
                                 <span className="inline-block w-16 h-16  bg-black rounded-full"><img src={dreamiegenie} width={70} alt="dreamiege genio logo"/></span>
