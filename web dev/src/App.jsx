@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <HomePage/>
+      <div className="overflow-x-hidden">
+        <HomePage/>
+      </div>
     </>
   )
 }
