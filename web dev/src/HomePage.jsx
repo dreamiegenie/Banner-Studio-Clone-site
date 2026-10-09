@@ -6,10 +6,18 @@ import { Cards } from "./Cards";
 import dreamiegenie from './assets/dreamiegenie.png'
 import { Footer } from "./Footer";
 import { FAQ } from "./FAQ";
+import { useState } from "react";
+import { Modal } from "./Modal";
 
 export function HomePage(){
 
+        
+        const [isOpen, setIsOpen] = useState(false);
+    
+        const showModal = () =>{
 
+            setIsOpen(prev => !prev)
+        }
 
     return(
         <>
@@ -18,7 +26,7 @@ export function HomePage(){
             <nav className="flex justify-between items-center p-4 mx-4 lg:mx-30 pb-4 border-b border-b-[#4e4f51]">
                 <h2 className="font-bold">Banner Studio</h2>
                 <div className="flex justify-center items-center gap-6 ">
-                    <a href="#" className="hidden lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">How it works</a>
+                    <a href="#" className="hidden lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300  ">How it works</a>
                     <a href="#" className="hidden  lg:inline-block lg:text-xs lg:text-white/70 hover:text-[#fe2c55] hover:-translate-y-0.5 transition-all duration-300 ">Questions</a>
                     <a className="border border-gray-500/50 rounded-4xl text-xs px-3 p-2 text-gray-300/80 hover:bg-white font-bold hover:text-black transition-all duration-300" href="https://github.com/dreamiegenie" target="_blank"   rel="noopener noreferrer">My Github</a>
                 </div>
@@ -40,14 +48,16 @@ export function HomePage(){
                 <p>Add an image or GIF banner to your Social profile. Complete the task, then follow the tutorial to get the feature.</p>
             
                 <div className="mt-10 text-white flex flex-col  gap-4 sm:flex-row">
-                    <button className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
-                                <StarsIcon/> Get your banner</button>
+                    <button  onClick={showModal}   className="bg-rose-600 p-3 flex gap-2 justify-center items-center rounded-xl w-full sm:w-50 sm:hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+                                <StarsIcon/>Click me</button>
                     <button className="border border-slate-400/50 p-3 rounded-xl flex gap-4 justify-center items-center w-full shadow shadow-mauve-200/30 sm:w-50 sm:hover:bg-white sm:hover:text-black sm:hover:-translate-y-0.5  transition-all duration-500 ease-in-out cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-play-btn-fill" viewBox="0 0 16 16">
                                     <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                                     </svg>See how it works</button>
                 </div>
-
+                    {isOpen &&
+                        <Modal onClose={showModal}/>
+                    }
                     <div className="flex gap-4 text-xs mt-6">
                         <span className="flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
